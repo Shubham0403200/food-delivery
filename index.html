@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Signika+Negative:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- animation cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <img src="img/logo.png" class="logo" alt="">
+            <ul class="links-container">
+                <li class="link-items"><a href="#" class="links">Menu</a></li>
+                <li class="link-items"><a href="#" class="links">Orders</a></li>
+                <li class="link-items"><a href="#" class="links">Restaurants</a></li>
+                <li class="link-items"><a href="#" class="links">Track Order</a></li>
+            </ul>
+
+            <div class="nav-extras">
+                <div class="search">
+                    <input type="text" placeholder="Search Restaurant Cuisines.." class="search-box">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="nav-toggler">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+
+        <div class="hero-section" id="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-heading">Eat the Best</h1>
+                <p class="hero-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quam eveniet debitis commodi eligendi laboriosam.</p>
+                <div class="search location">
+                    <input type="text" placeholder="Search Restaurant Cuisines.." class="search-box">
+                    <button class="search-btn location-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+                </div>
+                <div class="hero-action-btn-container">
+                    <button class="btn">Order Food</button>
+                    <p class="or">Or</p>
+                    <button class="btn transparent">Make Reservations</button>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+
+                <div class="background-element" data-aos="fade-down">
+                    <div class="ellipse" ></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                </div>
+
+                <div class="foreground-element">
+                    <img src="img/hero-biryani.png" alt="" class="hero-img" >
+                    <img src="img/hero-burger.png" alt="" class="hero-img">
+                    <img src="img/hero-pizza.png" alt="" class="hero-img">
+                </div>
+
+                <div class="review-box">
+                    <div class="review-info">
+                        <img src="img/user-1.png" alt="" class="review-img">
+
+                        <div class="reviewer">
+                            <div class="reviewer-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h2 class="reviewer-name">Krisha</h2>
+                        </div>
+
+                    </div>
+                    <div class="review-body">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="review-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo velit quas molestias molestiae nihil, a tempore totam quibusdam mollitia! Veritatis temporibus id, labore mollitia iusto quae. Laborum id alias unde!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- restaurant section -->
+        <div class="restaurant-section">
+
+            <div class="leaf-layer right">
+                <img src="img/leafs.png" alt="">
+            </div>
+
+            <div class="section">
+                <div class="food-image-container">
+                    <div class="circle">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="circle">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+
+                    <div>
+                        <img src="img/food-1.png" alt="" class="food-img">
+                        <img src="img/food-2.png" alt="" class="food-img">
+                        <img src="img/food-3.png" alt="" class="food-img">
+                        <img src="img/food-4.png" alt="" class="food-img">
+                        <img src="img/food-5.png" alt="" class="food-img">
+                        <img src="img/food-6.png" alt="" class="food-img">
+                        <img src="img/food-7.png" alt="" class="food-img">
+                    </div>
+                </div>
+
+                <div class="section-detail">
+                    <h3 class="section-highlight">From Professional Chef</h3>
+                    <p class="section-title">1000+</p>
+                    <p class="section-info">Order from our 1000+ food and beverages menu. Food for every taste and mood</p>
+                    <button class="btn">Order Now</button>
+                </div>
+            </div>
+
+            <!-- card section -->
+
+            <div class="restaurant-container">
+                <div class="restaurant">
+                    <p class="discount">50% Off</p>
+                    <div class="restaurant-tn">
+                        <img src="img/restaurant-1.png" class="restaurant-img" alt="">
+                    </div>
+                    <div class="restaurant-body">
+                        <h3 class="restaurant-name">Zaika Hotel</h3>
+                        <p class="menu">Burgers, Fries, Pav Bhaji</p>
+                        <p class="place">Mumbai</p>
+                        <span class="rest-rating"> 4.2 <i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <p class="discount">50% Off</p>
+                    <div class="restaurant-tn">
+                        <img src="img/restaurant-2.png" class="restaurant-img" alt="">
+                    </div>
+                    <div class="restaurant-body">
+                        <h3 class="restaurant-name">Sahara Hotel</h3>
+                        <p class="menu">Burgers, Fries, Pav Bhaji</p>
+                        <p class="place">Mumbai</p>
+                        <span class="rest-rating"> 4.2 <i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <p class="discount">50% Off</p>
+                    <div class="restaurant-tn">
+                        <img src="img/restaurant-3.png" class="restaurant-img" alt="">
+                    </div>
+                    <div class="restaurant-body">
+                        <h3 class="restaurant-name">PR Continental</h3>
+                        <p class="menu">Burgers, Fries, Pav Bhaji</p>
+                        <p class="place">Mumbai</p>
+                        <span class="rest-rating"> 4.2 <i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <p class="discount">50% Off</p>
+                    <div class="restaurant-tn">
+                        <img src="img/restaurant-4.png" class="restaurant-img" alt="">
+                    </div>
+                    <div class="restaurant-body">
+                        <h3 class="restaurant-name">PVR restaurant</h3>
+                        <p class="menu">Burgers, Fries, Pav Bhaji</p>
+                        <p class="place">Mumbai</p>
+                        <span class="rest-rating"> 4.2 <i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <p class="discount">50% Off</p>
+                    <div class="restaurant-tn">
+                        <img src="img/restaurant-5.png" class="restaurant-img" alt="">
+                    </div>
+                    <div class="restaurant-body">
+                        <h3 class="restaurant-name">Slush restaurant</h3>
+                        <p class="menu">Burgers, Fries, Pav Bhaji</p>
+                        <p class="place">Mumbai</p>
+                        <span class="rest-rating"> 4.2 <i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <p class="discount">50% Off</p>
+                    <div class="restaurant-tn">
+                        <img src="img/restaurant-6.png" class="restaurant-img" alt="">
+                    </div>
+                    <div class="restaurant-body">
+                        <h3 class="restaurant-name">Sai restaurant</h3>
+                        <p class="menu">Burgers, Fries, Pav Bhaji</p>
+                        <p class="place">Mumbai</p>
+                        <span class="rest-rating"> 4.2 <i class="fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaf-layer left">
+                <img src="img/leafs.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- about section -->
+
+        <div class="about-section" id="about-section">
+
+            <div class="about-us-review-container">
+                <div class="circle"></div>
+                <img src="img/pizza-pan.png" class="pizza-pan" alt="">
+
+                <div class="reviews-container">
+                    <div class="review-wrapper review-1">
+                        <img src="img/user-1.png" alt="" class="review-img">
+                        <div class="review-box">
+                            <div class="review-info">
+        
+                                <div class="reviewer">
+                                    <div class="reviewer-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                    <h2 class="reviewer-name">Krisha</h2>
+                                </div>
+        
+                            </div>
+                            <div class="review-body">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p class="review-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo velit quas molestias molestiae nihil, a tempore totam quibusdam mollitia! Veritatis temporibus id, labore mollitia iusto quae. Laborum id alias unde!</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="reviews-container">
+                    <div class="review-wrapper review-2">
+                        <img src="img/user-2.png" alt="" class="review-img">
+                        <div class="review-box">
+                            <div class="review-info">
+        
+                                <div class="reviewer">
+                                    <div class="reviewer-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <p>2.5</p>
+                                    </div>
+                                    <h2 class="reviewer-name">Ayesha</h2>
+                                </div>
+        
+                            </div>
+                            <div class="review-body">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p class="review-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo velit quas molestias molestiae nihil, a tempore totam quibusdam mollitia! Veritatis temporibus id, labore mollitia iusto quae. Laborum id alias unde!</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+                <div class="reviews-container">
+                    <div class="review-wrapper review-3">
+                        <img src="img/user-3.png" alt="" class="review-img">
+                        <div class="review-box">
+                            <div class="review-info">
+        
+                                <div class="reviewer">
+                                    <div class="reviewer-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                    <h2 class="reviewer-name">Honey</h2>
+                                </div>
+        
+                            </div>
+                            <div class="review-body">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p class="review-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo velit quas molestias molestiae nihil, a tempore totam quibusdam mollitia! Veritatis temporibus id, labore mollitia iusto quae. Laborum id alias unde!</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+                <div class="reviews-container">
+                    <div class="review-wrapper review-4">
+                        <img src="img/user-4.png" alt="" class="review-img">
+                        <div class="review-box">
+                            <div class="review-info">
+        
+                                <div class="reviewer">
+                                    <div class="reviewer-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                    <h2 class="reviewer-name">Shiv</h2>
+                                </div>
+        
+                            </div>
+                            <div class="review-body">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p class="review-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo velit quas molestias molestiae nihil, a tempore totam quibusdam mollitia! Veritatis temporibus id, labore mollitia iusto quae. Laborum id alias unde!</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+                <div class="reviews-container">
+                    <div class="review-wrapper review-5">
+                        <img src="img/user-5.png" alt="" class="review-img">
+                        <div class="review-box">
+                            <div class="review-info">
+        
+                                <div class="reviewer">
+                                    <div class="reviewer-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                    <h2 class="reviewer-name">Rocky</h2>
+                                </div>
+        
+                            </div>
+                            <div class="review-body">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p class="review-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo velit quas molestias molestiae nihil, a tempore totam quibusdam mollitia! Veritatis temporibus id, labore mollitia iusto quae. Laborum id alias unde!</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+                
+
+            </div>
+
+            <div class="about">
+                <h2 class="about-title">Why US</h2>
+                <p class="about-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis qui laborum vero provident deleniti. Ea fugiat autem doloremque quis nihil!</p>
+                <div class="services-container">
+                    <div class="service">
+                        <div class="service-title">
+                            <img src="img/fastest-delivery.png" alt="" class="service-image">
+                            <h3 class="service-name">Fastest Delivery</h3>
+                        </div>
+                        <p class="service-detail">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-title">
+                            <img src="img/best-prices.png" alt="" class="service-image">
+                            <h3 class="service-name"> Best Prices</h3>
+                        </div>
+                        <p class="service-detail">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-title">
+                            <img src="img/20+ restaurant.png" alt="" class="service-image">
+                            <h3 class="service-name">20+ Restaurants</h3>
+                        </div>
+                        <p class="service-detail">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FAQ SECTION -->
+        
+        <div class="faq-section">
+            <h2 class="faq-section-title">Frequently Asked Question</h2>
+            <div class="faq">
+                <div class="question-box">
+                    <h3 class="question">How can i cancel my reservation ? </h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-box">
+                    <p class="answer">        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nemo velit quia officiis? Error iusto cupiditate harum, recusandae suscipit libero.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question-box">
+                    <h3 class="question">How can I contact my delivery person ? </h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-box">
+                    <p class="answer">        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nemo velit quia officiis? Error iusto cupiditate harum, recusandae suscipit libero.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question-box">
+                    <h3 class="question">How can I change delivery address after order placement ?</h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-box">
+                    <p class="answer">        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nemo velit quia officiis? Error iusto cupiditate harum, recusandae suscipit libero.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question-box">
+                    <h3 class="question">My payment is declining. What should I do ? </h3>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer-box">
+                    <p class="answer">        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nemo velit quia officiis? Error iusto cupiditate harum, recusandae suscipit libero.
+                    </p>
+                </div>
+            </div>
+
+            <div class="dish-layer">
+                <img src="img/side-dish.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- download app  -->
+
+        <div class="download-section">
+            <div class="section">
+                <div class="download-app-image-container">
+                    <div class="pulse">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <img src="img/leafs.png" class="leaf left" alt="">
+                    <img src="img/leafs.png" class="leaf right" alt="">
+                    <img src="img/app.png" class="phone-mockup" alt="">
+                </div>
+
+                <div class="section-detail">
+                    <h3 class="section-highlight">Download our app to stay updated</h3>
+                    <p class="section-title">Make orders from your phone</p>
+                    <p class="section-info">Get extra feature on app including tracking order, managing account and much more.</p>
+
+                    <div class="download-btn-group">
+                        <a href="#" class="download-btn"><img src="img/play-store.png" alt=""></a>
+                        <a href="#" class="download-btn"><img src="img/app-store.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- discount section -->
+
+        <div class="discount-banner">
+            <div class="section-detail">
+                <h2 class="section-title">Get an extra 20% off on your first order</h2>
+                <h4 class="section-info">Use this code during checkout</h4>
+                <p class="discount-code">WELCOME30</p>
+            </div>
+
+            <div class="dish-slider">
+                <img src="img/discount-food-slider-1.png" alt="">
+                <img src="img/hero-pizza.png" alt="">
+                <img src="img/hero-burger.png" alt="">
+            </div>
+        </div>
+
+        <!-- footer sectuion -->
+
+        <div class="footer-section">
+            <div class="company-info">
+                <img src="img/footer-logo.png" class="logo" alt="">
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                </div>
+
+                <div class="download-btn-group">
+                    <a href="#" class="download-btn"><img src="img/play-store.png" alt=""></a>
+                    <a href="#" class="download-btn"><img src="img/app-store.png" alt=""></a>
+                </div>
+            </div>
+            
+            <div class="useful-links footer-links-container">
+                <h5 class="footer-links-title">Footer Links</h5>
+                <a href="#" class="footer-links">Menu</a>
+                <a href="#" class="footer-links">Restaurant</a>
+                <a href="#" class="footer-links">Your Orders</a>
+                <a href="#" class="footer-links">Track Order</a>
+                <a href="#" class="footer-links">Support</a>
+            </div>
+
+            <div class="useful-links footer-links-container">
+                <h5 class="footer-links-title">Information</h5>
+                <a href="#" class="footer-links">About Us</a>
+                <a href="#" class="footer-links">Privacy Policy</a>
+                <a href="#" class="footer-links">Terms & Conditions</a>
+                <a href="#" class="footer-links">What info we collect ?</a>
+            </div>
+            <div class="Contact footer-links-container">
+                <h5 class="footer-links-title">Contact Us</h5>
+                <p class="footer-text">Our main restaurant is located on Street 231, NYC</p>
+                <p class="footer-text">Phone - +00 1234567890</p>
+                <p class="footer-text">Email - help@logo.com</p>
+            </div>
+
+            <div class="payment-partners">
+                <img src="img/visa.png" alt="">
+                <img src="img/paypal.png" alt="">
+                <img src="img/app-pay.png" alt="">
+                <img src="img/google-pay.png" alt="">
+                <img src="img/stripe.png" alt="">
+            </div>
+
+            <p class="payment-text">Fully secured payment gateways by trusted companies</p>
+
+            <p class="copyright">Copyright Shubham Awasthi </p>
+
+        </div>
+    </header>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
