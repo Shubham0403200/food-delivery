@@ -875,20 +875,20 @@ body::-webkit-scrollbar-track {
 
 .leaf.left{
     bottom: 15%;
-    left: 15%;
+    left: 7%;
     transform: rotate(20deg);
 }
 
 .leaf.right{
     bottom: 0;
-    right: -5%;
-    transform: rotate(-120deg);
+    right: -1%;
+    transform: rotate(-145deg);
 }
 
 .phone-mockup{
     position: absolute;
     height: 100%;
-    left: 50%;
+    left: 42%;
     transform: translateX(-20%) scale(1.1) rotate(10deg);
     box-shadow: 0 .5rem 0.25rem var(--phone-app-shadow);
     border-radius: 2rem;
@@ -1336,7 +1336,9 @@ body::-webkit-scrollbar-track {
         background: var(--primary-color);
         color: var(--secondary-text-color);
     }
-
+    .about-info {
+        width: 94%;
+    }
     .hero-section{
         flex-direction: column-reverse;
         gap: 3rem;
