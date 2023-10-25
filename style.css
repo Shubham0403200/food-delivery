@@ -1276,6 +1276,9 @@ body::-webkit-scrollbar-track {
         cursor: pointer;
         transition: .5s ease-out;
     }
+    .hero-content {
+        padding: 3rem 0;
+    }
     .nav-toggler span {
         position: absolute;
         top: 50%;
